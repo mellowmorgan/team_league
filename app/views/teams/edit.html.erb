@@ -1,0 +1,9 @@
+<h1>Edit team</h1>
+
+<%= form_for @team do |f| %>
+  <%= f.label :team_coordinator %>
+  <%= f.text_field :team_coordinator %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit  %>
+<% end %>
