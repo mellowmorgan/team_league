@@ -15,6 +15,11 @@
   <p>No players are listed for this team.</p>
 <% end %>
 
+<h4>Win/Loss record for this team:</h4>
+<h5>Wins: <%= @wins %> Losses: <%= @losses %></h5>
+
+
+
 <p><%= link_to "Add a player", new_team_player_path(@team) %></p>
 
 <p><%= link_to "Edit", edit_team_path(@team) %></p>

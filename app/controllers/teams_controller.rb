@@ -25,7 +25,25 @@ class TeamsController < ApplicationController
   end
 
   def show
+    @wins = 0
+    @losses = 0
     @team = Team.find(params[:id])
+    Game.all.each do |game|
+      if (game.team_1_id == @team.id)
+        if game.team_1_score > game.team_2_score
+          @wins += 1
+        else
+          @losses += 1
+        end
+      end
+      if (game.team_2_id == @team.id)
+        if game.team_2_score > game.team_1_score
+          @wins += 1
+        else
+          @losses += 1
+        end
+      end
+    end
     render :show
   end
 
