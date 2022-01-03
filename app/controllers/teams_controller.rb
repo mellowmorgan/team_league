@@ -40,6 +40,14 @@ class TeamsController < ApplicationController
 
   def destroy
     @team = Team.find(params[:id])
+    games_with_team_1 = Game.where(team_1_id: @team.id)
+    games_with_team_2 = Game.where(team_2_id: @team.id)
+    games_with_team_1.each do |game|
+      game.destroy
+    end
+    games_with_team_2.each do |game|
+      game.destroy
+    end
     @team.destroy
     redirect_to teams_path
   end

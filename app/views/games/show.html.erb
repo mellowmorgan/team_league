@@ -1,25 +1,12 @@
-<h1><%= @team.name %></h1>
-<h3>Team Coordinator: <%= @team.team_coordinator %></h3>
+<h1>Team 1: <%= @team1.name %></h1>
+<h1>Team 2: <%= @team2.name %></h1>
+<h2>Team 1 Score: <%= @game.team_1_score %></h2>
+<h2>Team 2 Score: <%= @game.team_2_score %></h2>
+<h2>Game Winner: <%= @game.team_1_score > @game.team_2_score ? @team1.name : @team2.name %></h2>
 
-<% if @team.players.any? %>
-  <h4>Here are the players for this team:</h4>
-
-  <% @team.players.each do |player| %>
-    <ul>
-      <li>
-        <%= link_to player.name, team_player_path(@team, player) %>
-      </li>
-    </ul>
-  <% end %>
-<% else %>
-  <p>No players are listed for this team.</p>
-<% end %>
-
-<p><%= link_to "Add a player", new_team_player_path(@team) %></p>
-
-<p><%= link_to "Edit", edit_team_path(@team) %></p>
-<p><%= link_to "Delete team", team_path(@team),
+<p><%= link_to "Edit game", edit_game_path(@game) %></p>
+<p><%= link_to "Delete game", game_path(@game),
                         :data => {:confirm => "Are you sure?",
                                        :method => "delete"} %></p>
 
-<p><%= link_to "Return to teams", teams_path %></p>
+<p><%= link_to "Return to games", games_path %></p>

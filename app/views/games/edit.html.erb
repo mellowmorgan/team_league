@@ -1,10 +1,8 @@
-<h1>New game</h1>
+<h1>Edit game</h1>
 
 <%= form_for [@team, @game] do |f| %>
-  <%= f.label :team_1_id %>
-  <%= f.text_field :team_1_id %>
-  <%= f.label :team_2_id %>
-  <%= f.text_field :team_2_id %>
+  <%= f.hidden_field :team_1_id %>
+  <%= f.hidden_field :team_2_id %>
   <%= f.label :team_1_score %>
   <%= f.text_field :team_1_score %>
   <%= f.label :team_2_score %>
