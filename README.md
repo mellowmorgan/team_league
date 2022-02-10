@@ -1,6 +1,6 @@
 # Team League
 
-#### Created By: Morgan Waites, Frank Proulx
+#### Created By: Morgan Waites, Frank Proulx, Christopher Neal
 
 #### Ruby on Rails app for displaying
 
@@ -32,4 +32,4 @@ This project is a ruby rails app showing CRUD functionality and has-many relatio
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT) Copyright (c) 2022 Morgan Waites, Frank Proulx
+[MIT](https://opensource.org/licenses/MIT) Copyright (c) 2022 Morgan Waites, Frank Proulx, Christopher Neal
