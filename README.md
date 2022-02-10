@@ -31,7 +31,7 @@ This project is a ruby rails app showing CRUD functionality and has-many relatio
 * Type bundle install in the terminal to populate gems
 * To create a database using the database backup included in this project, type in your terminal: 
       createdb [DATABASE NAME] 
-      psql [DATABASE_NAME] < record_store.sql
+      psql [DATABASE_NAME] < team_league.sql
       createdb -T [DATABASE_NAME] [TEST_DATABASE_NAME]
 * Type rspec in the terminal to confirm passing of all tests  
 * Type ruby app.rb to run the program with Sinatra
