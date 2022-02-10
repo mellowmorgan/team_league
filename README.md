@@ -2,7 +2,7 @@
 
 #### Created By: Morgan Waites, Frank Proulx, Christopher Neal
 
-#### Ruby on Rails app for displaying games, teams and players.
+#### Ruby on Rails app for CRUD of games, teams and players.
 
 ## Technologies Used
 
